@@ -1,0 +1,13 @@
+.main-text {
+  padding: 6rem 0;
+  padding-top: 12rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__text {
+    grid-column: 2 / 1 span;
+  }
+}

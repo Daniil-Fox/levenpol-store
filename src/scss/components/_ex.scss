@@ -1,0 +1,14 @@
+.ex {
+  padding: 6rem 0;
+  padding-top: 7rem;
+
+  &__card {
+    flex: 1;
+    position: relative;
+    height: 60rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

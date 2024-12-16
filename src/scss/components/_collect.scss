@@ -1,0 +1,36 @@
+.collect {
+  padding: 6rem 0;
+  padding-bottom: 12rem;
+
+  &__container {
+    position: relative;
+    height: 58rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__content {
+    position: relative;
+    z-index: 4;
+
+    text-align: center;
+  }
+  &__title {
+    margin-bottom: 1rem;
+  }
+  &__date {
+    margin: 0;
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: #fff;
+  }
+  &__video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

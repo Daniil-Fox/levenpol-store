@@ -1,0 +1,67 @@
+.hero {
+  background: #fff;
+  position: relative;
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 12rem;
+
+    padding: 21.2rem 0;
+    padding-bottom: 4.2rem;
+  }
+  &__logo {
+    height: 22rem;
+    width: 79.5rem;
+
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+  }
+
+  &__capture {
+    margin: 0;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 120%;
+    text-align: right;
+    color: #303030;
+  }
+
+  &__girl {
+    position: absolute;
+
+    &--left {
+      left: 6rem;
+      top: 1rem;
+      bottom: 0;
+    }
+
+    &--right {
+      right: 0;
+      top: 0;
+      bottom: 0;
+
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    img {
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+}
