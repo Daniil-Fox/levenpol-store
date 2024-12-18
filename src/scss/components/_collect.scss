@@ -1,7 +1,9 @@
 .collect {
   padding: 6rem 0;
   padding-bottom: 12rem;
-
+  @include small-tablet {
+    display: none;
+  }
   &__container {
     position: relative;
     height: 58rem;

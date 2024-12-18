@@ -1,0 +1,27 @@
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.4rem;
+}
+
+.filt {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  &::after {
+    content: "";
+    display: block;
+    width: 1.5rem;
+    height: 1.4rem;
+
+    background-image: url("./../img/arr-down.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition: transform 0.3s ease-out;
+  }
+}

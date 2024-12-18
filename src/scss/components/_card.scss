@@ -24,6 +24,10 @@
     text-transform: uppercase;
     text-align: center;
     color: #0c0c0c;
+    @include tablet {
+      left: 0.4rem;
+      top: 0.4rem;
+    }
   }
 
   &__cart {
@@ -42,6 +46,14 @@
 
     padding: 1rem;
 
+    @include tablet {
+      right: 1.2rem;
+      bottom: 1.2rem;
+      width: 3.2rem;
+      height: 3.2rem;
+      padding: 0.8rem;
+    }
+
     svg {
       height: 100%;
       width: 100%;
@@ -50,7 +62,9 @@
 
   &__img {
     height: 44rem;
-
+    @include tablet {
+      height: 21rem;
+    }
     img {
       height: 100%;
       width: 100%;

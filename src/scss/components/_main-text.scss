@@ -1,13 +1,21 @@
 .main-text {
   padding: 6rem 0;
   padding-top: 12rem;
-
+  @include tablet {
+    padding: 2rem 0;
+  }
   &__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    @include small-tablet {
+      display: block;
+    }
   }
 
   &__text {
     grid-column: 2 / 1 span;
+    @include small-tablet {
+      text-align: center;
+    }
   }
 }

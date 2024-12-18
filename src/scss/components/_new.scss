@@ -1,10 +1,20 @@
 .new {
   padding: 6rem 0;
-
+  @include tablet {
+    padding: 2rem 0;
+  }
   &__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.4rem;
+
+    @include small-tablet {
+      display: flex;
+      gap: 0;
+    }
+  }
+  &__title {
+    margin: 0;
   }
 
   &__header {

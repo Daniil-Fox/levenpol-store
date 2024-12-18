@@ -1,6 +1,8 @@
 .types {
   padding: 6rem 0;
-
+  @include small-tablet {
+    padding: 2rem 0;
+  }
   &__slider {
     padding: 0 calc((100% - var(--container-width)) / 2);
   }
@@ -13,7 +15,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  padding: 2.4rem;
+  @include small-tablet {
+    width: 35rem;
+    height: 39.5rem;
+    justify-content: flex-end;
+  }
   &__img {
     position: absolute;
     left: 0;
@@ -38,5 +45,8 @@
     font-weight: 300;
     font-size: 3.2rem;
     color: #fff;
+    @include small-tablet {
+      font-size: 2.4rem;
+    }
   }
 }

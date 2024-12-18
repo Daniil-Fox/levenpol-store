@@ -1,0 +1,28 @@
+.store {
+  padding: 3.5rem 0 11.2rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2.4rem;
+
+    padding-top: 5rem;
+  }
+
+  &__aside {
+    grid-column: 3 span;
+  }
+  &__main {
+    grid-column: 9 span;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.4rem;
+  }
+
+  &__filters {
+    margin-bottom: 3.6rem;
+  }
+}

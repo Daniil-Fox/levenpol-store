@@ -1,7 +1,13 @@
 .products {
   padding: 6rem 0;
+  @include small-tablet {
+    padding: 2rem 0;
+  }
   &__slider {
     padding: 0 calc((100% - var(--container-width)) / 2);
+    @include small-tablet {
+      padding: 0 2rem;
+    }
     .swiper-slide {
       width: auto;
     }
@@ -9,6 +15,9 @@
   &__slide {
     width: 36rem;
     padding-bottom: 1rem;
+    @include small-tablet {
+      width: 16.8rem;
+    }
   }
 
   &__img {
@@ -27,5 +36,8 @@
     font-size: 3.2rem;
     text-transform: capitalize;
     color: #303030;
+    @include small-tablet {
+      font-size: 2rem;
+    }
   }
 }

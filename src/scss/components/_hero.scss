@@ -10,11 +10,53 @@
 
     padding: 21.2rem 0;
     padding-bottom: 4.2rem;
+    @include small-tablet {
+      padding: 3.2rem 2rem 37rem;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 51rem;
+      display: none;
+
+      background-image: url("./../img/hero-mob.webp");
+      background-size: auto 51rem;
+      background-repeat: no-repeat;
+      background-position: bottom left;
+
+      @include small-tablet {
+        display: block;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      width: 32.2rem;
+      aspect-ratio: 1 / 1;
+      background-color: #fff6f7;
+      border-radius: 100%;
+      overflow: hidden;
+      bottom: 2.4rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: none;
+      @include small-tablet {
+        display: block;
+      }
+    }
   }
   &__logo {
     height: 22rem;
     width: 79.5rem;
-
+    @include small-tablet {
+      width: 100%;
+      height: 9.5rem;
+    }
     svg {
       height: 100%;
       width: 100%;
@@ -26,6 +68,7 @@
     flex-direction: column;
     gap: 0.8rem;
     align-items: center;
+    padding-left: 20rem;
   }
 
   &__capture {
@@ -40,7 +83,9 @@
 
   &__girl {
     position: absolute;
-
+    @include small-tablet {
+      display: none;
+    }
     &--left {
       left: 6rem;
       top: 1rem;

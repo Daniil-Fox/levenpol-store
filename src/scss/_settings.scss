@@ -16,6 +16,9 @@ html {
   @media (min-width: 1440px) {
     font-size: 10px;
   }
+  @media (max-width: 850px) {
+    font-size: calc(100vw / 39);
+  }
 }
 .page__body {
   margin: 0;
@@ -199,5 +202,82 @@ a {
 
   &--white {
     color: #fff;
+  }
+}
+
+.breadcrumbs {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 100%;
+      color: #303030;
+      &:not(:last-child) {
+        color: rgba(48, 48, 48, 0.5);
+        &::after {
+          content: "";
+          display: block;
+          width: 1.2rem;
+          height: 1.5rem;
+
+          background-image: url("./../img/breadcrumbs-arr.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+
+      a {
+        color: inherit;
+      }
+    }
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #303030;
+  padding: 1.2rem;
+
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #fff;
+  transition: 0.3s ease-out;
+  @include hover {
+    background-color: #fff;
+    color: #303030;
+  }
+  &.disable {
+    background-color: #bababa;
+  }
+}
+
+.title2 {
+  margin: 0;
+  margin-bottom: 3.2rem;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #0c0c0c;
+
+  @include tablet {
+    font-size: 1.6rem;
   }
 }
